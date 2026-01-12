@@ -2,11 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "7f5e639e-441a-4e14-805c-ec5046c67688"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "porftolio-FE": {
+    "portfolio-FE": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "porftolio-FE:build:production"
+              "buildTarget": "portfolio-FE:build:production"
             },
             "development": {
-              "buildTarget": "porftolio-FE:build:development"
+              "buildTarget": "portfolio-FE:build:development"
             }
           },
           "defaultConfiguration": "development"
