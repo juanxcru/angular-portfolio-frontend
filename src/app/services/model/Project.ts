@@ -6,7 +6,7 @@ export enum ProjectType {
 export interface Project {
   id: number;
   title: string;
-  techStack: string;
+  techStack: string[];
   summary: string;
   tags: string[];
   type: ProjectType;
