@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   templateUrl: './tech-pill.component.html',
   styleUrl: './tech-pill.component.css',
 })
+
+
+
 export class TechPillComponent {
+  readonly _techs = [
+  "Python",
+  "Java",
+  "Spring Boot",
+  "C++",
+  "C",
+  "JavaScript",
+];
 
 }

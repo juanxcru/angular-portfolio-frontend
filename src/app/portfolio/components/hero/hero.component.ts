@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { SocialLinksComponent } from "../social-links/social-links.component";
+import { TechPillComponent } from '../tech-pill/tech-pill.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [SocialLinksComponent, TechPillComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })
