@@ -50,7 +50,6 @@
     position: absolute;
     inset: -2px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #10b981, #06b6d4, #8b5cf6);
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
