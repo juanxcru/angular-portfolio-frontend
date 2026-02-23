@@ -5,10 +5,11 @@ import { AboutComponent } from "../about/about.component";
 import { ExperienceComponent } from "../experience/experience.component";
 import { ProjectsComponent } from "../projects/projects.component";
 import { ContactComponent } from "../contact/contact.component";
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-portfolio-body',
-  imports: [NavbarComponent, HeroComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent],
+  imports: [NavbarComponent, HeroComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent],
   templateUrl: './portfolio-body.component.html',
   styleUrl: './portfolio-body.component.css',
 })
