@@ -1,4 +1,8 @@
 @layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .font-mono-code { font-family: 'JetBrains Mono', monospace; }
   .font-display { font-family: 'Space Grotesk', sans-serif; }
 
