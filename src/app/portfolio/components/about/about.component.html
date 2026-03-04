@@ -9,7 +9,11 @@
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
         <p id="about-text" class="text-slate-400 leading-relaxed mb-6 text-justify">
-          Backend Engineer with 4+ years of experience building and maintaining high-availability transactional systems and enterprise APIs. Background in Java and Spring ecosystem, REST API design and production incident resolution in mission-critical environments. Motivated by teamwork, and the opportunity to make technology work better for people.
+          @if(store._cvInfo(); as cvinfo){
+            {{ cvinfo.bio1}}
+          }@else {
+            {{ " N/A "}}
+          }
         </p>
         <p class="text-slate-400 leading-relaxed mb-6 text-justify">
           I thrive in collaborative environments where I can learn from others and share my knowledge. I enjoy mentoring junior developers and contributing in whatever way I can. I'm always open to new challenges and opportunities to grow as a developer and as a person.

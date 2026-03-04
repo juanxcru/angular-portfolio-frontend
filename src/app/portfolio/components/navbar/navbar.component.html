@@ -20,20 +20,23 @@
       </a> -->
 
       <div class="inline-flex items-center rounded-full border border-slate-700/40 bg-slate-900/40 p-1 shadow-sm">
-        <!-- EN -->
         <button type="button" aria-label="Switch to English"
+          (click)="setLocale('en')"
+          [class.bg-slate-100]="isEn()"
+          [class.text-slate-900]="isEn()"
           class="group inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition
-           text-slate-200 hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60" data-locale="en">
+           text-slate-200 hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60">
           <span class="text-lg leading-none"><span class="fi fi-gb"></span></span>
         </button>
 
-        <!-- Divider -->
         <span class="mx-1 h-6 w-px bg-slate-700/50"></span>
 
-        <!-- ES (Argentina) -->
         <button type="button" aria-label="Cambiar a Español"
+          (click)="setLocale('es')"
+          [class.bg-slate-100]="isEs()"
+          [class.text-slate-900]="isEs()"
           class="group inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition
-           text-slate-200 hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60" data-locale="es">
+           text-slate-200 hover:bg-slate-800/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60">
           <span class="flag-emoji text-lg leading-none"><span class="fi fi-ar"></span></span>
         </button>
       </div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { CvInfo } from '../../store/cvinfo.store';
 
 @Component({
   selector: 'app-experience',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.css',
 })
 export class ExperienceComponent {
+
+    cvinfo = input.required<CvInfo>();
+
 
 }

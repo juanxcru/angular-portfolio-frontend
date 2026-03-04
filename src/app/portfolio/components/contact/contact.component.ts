@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ContactInfoComponent } from "../contact-info/contact-info.component";
 import { ContactFormComponent } from "../contact-form/contact-form.component";
+import { CvInfo } from '../../store/cvinfo.store';
 
 @Component({
   selector: 'app-contact',
@@ -9,5 +10,6 @@ import { ContactFormComponent } from "../contact-form/contact-form.component";
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
+  cvinfo = input.required<CvInfo>();
 
 }

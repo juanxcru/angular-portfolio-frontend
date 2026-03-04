@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { HeroComponent } from "../hero/hero.component";
 import { AboutComponent } from "../about/about.component";
@@ -6,6 +6,7 @@ import { ExperienceComponent } from "../experience/experience.component";
 import { ProjectsComponent } from "../projects/projects.component";
 import { ContactComponent } from "../contact/contact.component";
 import { FooterComponent } from '../footer/footer.component';
+import { CvInfoStore } from '../../store/cvinfo.store';
 
 @Component({
   selector: 'app-portfolio-body',
@@ -14,5 +15,8 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrl: './portfolio-body.component.css',
 })
 export class PortfolioBodyComponent {
+
+  readonly store = inject(CvInfoStore);
+
 
 }

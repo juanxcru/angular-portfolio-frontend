@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+export const backend = 'localhost:8080';
 export class App {
   protected readonly title = signal('portfolio-FE');
 }
